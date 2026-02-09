@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерный Доктор - Исправление ошибок на ПК</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-laptop-medical"></i>
+                <span>Компьютерный Доктор</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#" class="nav-link active" data-page="home">Главная</a></li>
+                    <li><a href="#" class="nav-link" data-page="services">Услуги</a></li>
+                    <li><a href="#" class="nav-link" data-page="diagnostic">Диагностика</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">О нас</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Профессиональное исправление ошибок на компьютере</h1>
+                <p>Быстрая диагностика и устранение любых проблем с вашим ПК: от синих экранов до медленной работы системы</p>
+                <a href="#" class="btn" data-page="diagnostic">Бесплатная диагностика</a>
+            </div>
+
+            <h2 class="section-title">Наши основные услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Устранение критических ошибок</h3>
+                    <p>Исправляем синие экраны смерти (BSOD), ошибки загрузки и системные сбои</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Оптимизация системы</h3>
+                    <p>Ускоряем работу компьютера, чистим реестр, удаляем вирусы и вредоносное ПО</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Восстановление данных</h3>
+                    <p>Восстанавливаем удаленные файлы, поврежденные разделы дисков и потерянные данные</p>
+                </div>
+            </div>
+
+            <div class="diagnostic-container">
+                <h2 class="section-title">Быстрая помощь онлайн</h2>
+                <p>Ответьте на несколько вопросов, и наш диагностический инструмент предложит решение вашей проблемы</p>
+                <a href="#" class="btn btn-secondary" data-page="diagnostic">Запустить диагностику</a>
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Диагностика ПК</h3>
+                    <p>Полная проверка системы на наличие ошибок, проблем с аппаратным и программным обеспечением</p>
+                    <p class="price">от 500 руб.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-virus"></i>
+                    <h3>Удаление вирусов</h3>
+                    <p>Очистка системы от вредоносных программ, вирусов, троянов, шпионского ПО</p>
+                    <p class="price">от 800 руб.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Ремонт и апгрейд</h3>
+                    <p>Замена комплектующих, сборка компьютеров, модернизация системы</p>
+                    <p class="price">от 1000 руб.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <h3>Установка ПО</h3>
+                    <p>Установка и настройка операционной системы, драйверов, программного обеспечения</p>
+                    <p class="price">от 600 руб.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Настройка сети</h3>
+                    <p>Настройка интернета, Wi-Fi, локальной сети, решение проблем с подключением</p>
+                    <p class="price">от 700 руб.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Защита данных</h3>
+                    <p>Настройка резервного копирования, шифрование данных, защита от кибератак</p>
+                    <p class="price">от 900 руб.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diagnostic Page -->
+        <section id="diagnostic" class="page">
+            <h2 class="section-title">Диагностика проблем с компьютером</h2>
+            <div class="diagnostic-container">
+                <div class="diagnostic-step">
+                    <div class="step-title">
+                        <div class="step-number">1</div>
+                        <h3>Какая основная проблема с вашим компьютером?</h3>
+                    </div>
+                    <div class="problem-options">
+                        <div class="problem-option" data-problem="slow">Компьютер работает медленно</div>
+                        <div class="problem-option" data-problem="crash">Система зависает или вылетает</div>
+                        <div class="problem-option" data-problem="virus">Подозрение на вирусы</div>
+                        <div class="problem-option" data-problem="boot">Проблемы с загрузкой</div>
+                        <div class="problem-option" data-problem="internet">Нет интернета или сеть не работает</div>
+                        <div class="problem-option" data-problem="other">Другая проблема</div>
+                    </div>
+                </div>
+
+                <div class="diagnostic-step">
+                    <div class="step-title">
+                        <div class="step-number">2</div>
+                        <h3>Как часто возникает проблема?</h3>
+                    </div>
+                    <div class="problem-options">
+                        <div class="problem-option" data-frequency="always">Постоянно</div>
+                        <div class="problem-option" data-frequency="often">Часто (несколько раз в день)</div>
+                        <div class="problem-option" data-frequency="sometimes">Иногда (раз в несколько дней)</div>
+                        <div class="problem-option" data-frequency="rarely">Редко</div>
+                    </div>
+                </div>
+
+                <div class="diagnostic-step">
+                    <div class="step-title">
+                        <div class="step-number">3</div>
+                        <h3>Когда в последний раз чистили компьютер от пыли?</h3>
+                    </div>
+                    <div class="problem-options">
+                        <div class="problem-option" data-dust="month">В последний месяц</div>
+                        <div class="problem-option" data-dust="year">В последний год</div>
+                        <div class="problem-option" data-dust="long">Более года назад</div>
+                        <div class="problem-option" data-dust="never">Никогда не чистил</div>
+                    </div>
+                </div>
+
+                <button class="btn" id="analyzeBtn">Проанализировать и получить решение</button>
+
+                <div class="diagnostic-result" id="diagnosticResult">
+                    <h3 class="result-title">Результаты диагностики</h3>
+                    <p id="resultText">Здесь будет отображено решение вашей проблемы на основе выбранных ответов.</p>
+                    <div id="recommendations"></div>
+                    <button class="btn btn-secondary" id="resetDiagnostic">Пройти диагностику заново</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <h2 class="section-title">О нашей компании</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Наша миссия</h3>
+                    <p>Мы помогаем людям решать проблемы с компьютерами уже более 10 лет. Наша команда опытных специалистов готова помочь с любой технической проблемой - от простых ошибок до сложных системных сбоев.</p>
+                    <p>Мы понимаем, как важно иметь надежно работающий компьютер в современном мире, и делаем все возможное, чтобы вернуть ваше устройство к жизни в кратчайшие сроки.</p>
+                </div>
+                <div>
+                    <h3>Наши преимущества</h3>
+                    <ul>
+                        <li>Быстрый выезд специалиста (в течение 2 часов)</li>
+                        <li>Гарантия на все виды работ до 1 года</li>
+                        <li>Бесплатная диагностика при последующем ремонте</li>
+                        <li>Прозрачные цены без скрытых платежей</li>
+                        <li>Используем только оригинальные комплектующие</li>
+                        <li>Конфиденциальность ваших данных</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="section-title">Наша команда</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Алексей Иванов">
+                    <div class="member-info">
+                        <h4>Алексей Иванов</h4>
+                        <p>Главный специалист по ремонту ПК</p>
+                        <p>Опыт работы: 12 лет</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Мария Семенова">
+                    <div class="member-info">
+                        <h4>Мария Семенова</h4>
+                        <p>Специалист по восстановлению данных</p>
+                        <p>Опыт работы: 8 лет</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Дмитрий Петров">
+                    <div class="member-info">
+                        <h4>Дмитрий Петров</h4>
+                        <p>Эксперт по сетям и безопасности</p>
+                        <p>Опыт работы: 10 лет</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title">Часто задаваемые вопросы</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Сколько времени занимает ремонт компьютера?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Время ремонта зависит от сложности проблемы. Простые задачи (удаление вирусов, чистка системы) занимают 1-2 часа. Сложный ремонт (замена комплектующих, восстановление данных) может занять от нескольких часов до 2-3 дней.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Даете ли вы гарантию на работу?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем гарантию на все виды работ. Гарантийный срок зависит от типа услуги: на ремонт - от 3 месяцев до 1 года, на установленное оборудование - согласно гарантии производителя.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли вызвать мастера на дом?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем услугу выезда специалиста на дом или в офис. Выезд осуществляется в течение 2 часов после заявки в пределах города. При выезде за город добавляется транспортная наценка.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Вы работаете с ноутбуками и Mac?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы ремонтируем ноутбуки всех марок, а также компьютеры Apple (Mac). Для Mac у нас есть специально обученные специалисты с соответствующим оборудованием и запчастями.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="about-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="problem">Опишите проблему</label>
+                            <textarea id="problem" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Контактная информация</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> г. Москва, ул. Компьютерная, д. 15, офис 204</p>
+                    <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@computer-doctor.ru</p>
+                    <p><i class="fas fa-clock"></i> <strong>Режим работы:</strong> Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</p>
+                    
+                    <h3 style="margin-top: 2rem;">Срочная помощь</h3>
+                    <p>Если у вас срочная проблема с компьютером, позвоните по номеру:</p>
+                    <p class="emergency-phone"><i class="fas fa-phone-alt"></i> +7 (495) 765-43-21</p>
+                    <p>Круглосуточно, без выходных</p>
+                    
+                    <h3 style="margin-top: 2rem;">Как нас найти</h3>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Карта проезда будет отображена здесь</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Компьютерный Доктор</h3>
+                    <p>Профессиональный ремонт и обслуживание компьютеров в Москве. Работаем с 2012 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#" data-page="services">Ремонт компьютеров</a></li>
+                        <li><a href="#" data-page="services">Удаление вирусов</a></li>
+                        <li><a href="#" data-page="services">Восстановление данных</a></li>
+                        <li><a href="#" data-page="services">Настройка сети</a></li>
+                        <li><a href="#" data-page="services">Апгрейд ПК</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@computer-doctor.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Компьютерная, 15</li>
+                        <li><a href="#" data-page="contact">Оставить заявку</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Компьютерный Доктор. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
